@@ -1,0 +1,116 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+nav{
+    background-color: rgba(31, 36, 70, 0.5);
+    backdrop-filter: blur(5px);
+}
+.nav-link, .navbar-brand{
+    color: white !important;
+}
+.nav-link:hover, .navbar-brand:hover{
+    color: rgb(203, 203, 203) !important;
+}
+.btn{
+    background-color: #002594;
+    color: #ffffff !important; 
+}
+.btn:hover{
+    background-color: #7292f4;
+    color: rgb(43, 43, 43) !important;
+}
+main{
+    background-color: #6d8185;
+    min-height: 100vh;
+    margin-bottom: 10px;
+}
+main > *{
+    background-color: #ffffff;
+    min-height: 15rem;
+    margin-bottom: 0.9em;
+    border-radius: 0.5em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
+}
+main .container{
+    max-width: 50rem;
+}
+.hero #info{
+    min-height: 15rem;
+}
+.active{
+    font-weight: 800;
+    position: relative;
+    z-index: 1024;
+}
+.active::after{
+    content: '';
+    background-color: #002594;
+    width: 40px;
+    height: 6px;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    z-index: -1;
+    box-shadow: 0 0 10px #002594;
+    
+}
+.hero #info p{
+    position: absolute;
+    bottom: 29%;
+    left: 20%;
+}
+#picture{
+    background-color: #271e2c;
+    padding: 0;
+}
+.cards{
+    background-color: transparent;
+    min-height: 15rem;
+    margin-bottom: 0.7em;
+    box-shadow: none;
+}
+.cards .card{
+    width: 18rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+.cards .row{
+    padding: 0 12px;
+}
+.cards .row .col h1{
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    max-width: 50rem;
+}
+.skills{
+    position: relative;
+    margin-bottom: 10px;
+    box-shadow: none;
+
+}
+.skills > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: inherit;
+}
+
+.skills::before{
+    content: '';
+    width: inherit;
+    height: 15rem;
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+    box-shadow: 0px 0.6px 10px rgba(0, 0, 0, 0.75);
+
+}
